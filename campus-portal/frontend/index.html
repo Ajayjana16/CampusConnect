@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signup</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+<div class="auth-container auth-shell">
+<div class="auth-showcase">
+<p class="hero-label">CampusConnect</p>
+<h1>Launch a cleaner campus hiring journey.</h1>
+<p class="auth-lead">Students discover roles faster, companies manage openings with clarity, and admins stay in control from one polished portal.</p>
+<div class="auth-feature-list">
+  <div class="auth-feature-chip">Student hiring flow</div>
+  <div class="auth-feature-chip">Company workspace</div>
+  <div class="auth-feature-chip">Admin control center</div>
+</div>
+</div>
+
+<div class="auth-card">
+<p class="auth-eyebrow">Create Account</p>
+<h2>Get started</h2>
+<p class="auth-copy">Choose your role and set up your account in a minute.</p>
+
+<select id="role">
+  <option value="student">Student</option>
+  <option value="company">Company</option>
+</select>
+
+<input type="text" id="name" placeholder="Name">
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="signup()">Create account</button>
+
+<p>Already have an account? <a href="login.html">Login</a></p>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

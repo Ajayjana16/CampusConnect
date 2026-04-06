@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Student Details</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadStudentsManagement()">
+<div class="navbar">
+<h2>Admin - Update Student Details</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+<h2 class="section-title">Update Student Details</h2>
+<button onclick="goToPage('admin-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner admin-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Student Records</p>
+<h1>Maintain clean and accurate student profiles.</h1>
+<p class="page-subtitle">Use this table to correct names and emails. Password resets now live in a separate recovery workflow so credentials stay better protected.</p>
+</div>
+</section>
+
+<div class="table-card">
+<table class="admin-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="studentManagementTable"></tbody>
+</table>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

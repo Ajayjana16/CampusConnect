@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Post Job</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+<div class="navbar">
+<h2>Company - Post Job</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+<h2 class="section-title">Post New Job</h2>
+<button onclick="goToPage('company-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner company-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Role Design</p>
+<h1>Shape a listing students immediately understand.</h1>
+<p class="page-subtitle">A clearer brief attracts stronger applications. Keep the essentials direct, visible, and easy to scan.</p>
+</div>
+</section>
+
+<div class="post-job-shell">
+<div class="post-job-panel post-job-intro">
+<p class="hero-label">Hiring Desk</p>
+<h1>Create a role students will notice.</h1>
+<p>Use a clear title, useful eligibility details, and a deadline that makes applications easy to plan.</p>
+
+<div class="post-job-tips">
+<div class="tip-chip">Strong title</div>
+<div class="tip-chip">Clear eligibility</div>
+<div class="tip-chip">Visible salary</div>
+<div class="tip-chip">Smart deadline</div>
+</div>
+</div>
+
+<div class="post-job-panel post-job-form-card">
+<div class="post-job-form-grid">
+<label class="form-field">
+<span>Job Title</span>
+<input type="text" id="title" placeholder="Frontend Developer Intern">
+</label>
+
+<label class="form-field">
+<span>Eligibility</span>
+<input type="text" id="eligibility" placeholder="B.Tech CSE, 7.0 CGPA and above">
+</label>
+
+<label class="form-field">
+<span>Salary</span>
+<input type="text" id="salary" placeholder="6 LPA">
+</label>
+
+<label class="form-field">
+<span>Last Date</span>
+<input type="date" id="lastDate">
+</label>
+
+<button class="primary-wide-btn" onclick="postJob()">Post Job</button>
+</div>
+</div>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

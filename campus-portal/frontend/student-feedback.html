@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Feedback</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="setStudentName(); initializeFeedbackPage()">
+<div class="navbar">
+  <h2>CampusConnect - Feedback</h2>
+
+  <div class="nav-right">
+    <span id="studentWelcome">Welcome Student</span>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+  <h2 class="section-title">Share Feedback</h2>
+  <button onclick="goToPage('student-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner student-banner">
+  <div class="page-hero-copy">
+    <p class="page-kicker">Experience Review</p>
+    <h1>Tell us what felt smooth and what needs work.</h1>
+    <p class="page-subtitle">Short, thoughtful feedback helps improve the portal for every student who comes next.</p>
+  </div>
+</section>
+
+<div class="feedback-shell">
+  <div class="feedback-panel feedback-intro">
+    <p class="hero-label">Recommended</p>
+    <h1>Star rating is the best fit here.</h1>
+    <p>It is quick for students, easy to compare, and works well with short written comments. A 5-star rating gives simple and familiar feedback.</p>
+  </div>
+
+  <div class="feedback-panel feedback-form-card">
+    <h3>Rate Your Experience</h3>
+    <div class="star-rating" id="starRating">
+      <button type="button" class="star-btn" onclick="setFeedbackRating(1)">&#9733;</button>
+      <button type="button" class="star-btn" onclick="setFeedbackRating(2)">&#9733;</button>
+      <button type="button" class="star-btn" onclick="setFeedbackRating(3)">&#9733;</button>
+      <button type="button" class="star-btn" onclick="setFeedbackRating(4)">&#9733;</button>
+      <button type="button" class="star-btn" onclick="setFeedbackRating(5)">&#9733;</button>
+    </div>
+    <p id="feedbackRatingLabel" class="feedback-rating-label">Choose a rating</p>
+    <textarea id="feedbackComment" class="feedback-textarea" placeholder="Tell us what worked well or what should improve"></textarea>
+    <button class="primary-wide-btn" onclick="submitFeedback()">Submit Feedback</button>
+  </div>
+</div>
+
+<div class="table-card">
+  <div class="page-actions">
+    <h2 class="section-title">Your Previous Feedback</h2>
+  </div>
+  <p class="section-copy">Your recent comments and ratings stay here as a simple timeline of what you shared.</p>
+  <div id="studentFeedbackList"></div>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

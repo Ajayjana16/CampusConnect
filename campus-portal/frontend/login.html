@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Campus Portal Login</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="auth-page">
+
+<div class="auth-container auth-shell">
+<div class="auth-showcase">
+<p class="hero-label">Return To CampusConnect</p>
+<h1>Step back into your workspace with focus.</h1>
+<p class="auth-lead">Use the same login page for students, companies, and admins, with a sharper interface built for daily use.</p>
+<div class="auth-feature-list">
+<div class="auth-feature-chip">Quick login</div>
+<div class="auth-feature-chip">Role-based access</div>
+<div class="auth-feature-chip">Live portal dashboard</div>
+</div>
+</div>
+
+<div class="login-container auth-card">
+<p class="auth-eyebrow">Welcome Back</p>
+<h2>Login</h2>
+<p class="auth-copy">Select your portal role and continue where you left off.</p>
+
+<select id="role">
+<option value="admin">Admin</option>
+<option value="company">Company</option>
+<option value="student">Student</option>
+</select>
+
+<input type="email" id="email" placeholder="Email">
+<input type="password" id="password" placeholder="Password">
+
+<button onclick="login()">Enter portal</button>
+<p>
+Don't have an account?
+<a href="index.html">Signup</a>
+</p>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+
+</body>
+</html>

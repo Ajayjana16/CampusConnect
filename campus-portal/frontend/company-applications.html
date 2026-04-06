@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Applications</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadCompanyApplicationsPage()">
+<div class="navbar">
+<h2>Company - Applications</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+<h2 class="section-title">Applications</h2>
+<button onclick="goToPage('company-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner company-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Applicant Review</p>
+<h1>See who is responding to your openings.</h1>
+<p class="page-subtitle">Use this view to scan interest, monitor role traction, and keep application records tidy.</p>
+</div>
+</section>
+
+<div class="table-card">
+<table class="admin-table">
+<thead>
+<tr>
+<th>Student Name</th>
+<th>Job Title</th>
+<th>Job Id</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="companyApplicationsTable"></tbody>
+</table>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

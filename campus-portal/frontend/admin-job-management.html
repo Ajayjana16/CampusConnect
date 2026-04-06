@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Posted Jobs</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadAdminJobsManagement()">
+<div class="navbar">
+<h2>Admin - Update Posted Jobs</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+<h2 class="section-title">Update Posted Jobs</h2>
+<button onclick="goToPage('admin-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner admin-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Jobs Oversight</p>
+<h1>Review live postings across the portal.</h1>
+<p class="page-subtitle">Adjust titles, eligibility, compensation, and deadlines from one refined admin operations page.</p>
+</div>
+</section>
+
+<div class="table-card">
+<table class="admin-table">
+<thead>
+<tr>
+<th>Title</th>
+<th>Eligibility</th>
+<th>Salary</th>
+<th>Last Date</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="adminJobTable"></tbody>
+</table>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

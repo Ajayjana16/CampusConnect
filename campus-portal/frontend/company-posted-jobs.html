@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Available Jobs</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadCompanyPostedJobsPage()">
+<div class="navbar">
+<h2>Company - Available Jobs</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+<h2 class="section-title">Available Jobs</h2>
+<button onclick="goToPage('company-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner company-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Openings Board</p>
+<h1>Review and refine your live postings.</h1>
+<p class="page-subtitle">Keep every listing current so students always see accurate role details, compensation, and deadlines.</p>
+</div>
+</section>
+
+<div class="table-card">
+<table class="admin-table">
+<thead>
+<tr>
+<th>Title</th>
+<th>Eligibility</th>
+<th>Salary</th>
+<th>Last Date</th>
+<th>Update</th>
+<th>Remove</th>
+</tr>
+</thead>
+<tbody id="companyPostedJobsTable"></tbody>
+</table>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

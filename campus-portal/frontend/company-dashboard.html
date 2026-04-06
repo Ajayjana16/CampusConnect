@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Company Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="setCompanyName()">
+<div class="navbar">
+  <h2>CampusConnect - Company</h2>
+
+  <div class="nav-right">
+    <span id="welcomeText">Welcome Company</span>
+    <button class="logout-btn" onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container dashboard-flow">
+<section class="page-hero-banner company-banner">
+  <div class="page-hero-copy">
+    <p class="page-kicker">Hiring Studio</p>
+    <h1>Run campus recruiting like a premium control room.</h1>
+    <p class="page-subtitle">Open roles, review traction, and keep your hiring pipeline organized from a single refined workspace built for faster decision-making.</p>
+  </div>
+  <div class="metric-ribbon">
+    <div class="metric-pill">
+      <span>Open Roles</span>
+      <strong id="companyJobCountBanner">0</strong>
+    </div>
+    <div class="metric-pill">
+      <span>Applicant Flow</span>
+      <strong id="companyApplicationCountBanner">0</strong>
+    </div>
+  </div>
+</section>
+
+<div id="companyDashboardNotice"></div>
+
+<h2 class="section-title">Company Options</h2>
+<p class="section-copy">Jump straight into the key parts of your hiring cycle with dedicated pages for posting, editing, and reviewing applications.</p>
+
+<div class="management-grid">
+  <div class="management-card company-action-card">
+    <h3>Post New Job</h3>
+    <p>Create a new opening from a dedicated job posting page.</p>
+    <button onclick="goToPage('company-post-job.html')">Open</button>
+  </div>
+
+  <div class="management-card company-action-card">
+    <h3>Available Jobs</h3>
+    <p>Click through to another page to update or remove posted jobs.</p>
+    <button onclick="goToPage('company-posted-jobs.html')">View Jobs</button>
+  </div>
+
+  <div class="management-card company-action-card">
+    <h3>Applications</h3>
+    <p>Open a separate page to review students who applied.</p>
+    <button onclick="goToPage('company-applications.html')">Open</button>
+  </div>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Remove Student Or Company</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadRemovalManagement()">
+<div class="navbar">
+<h2>Admin - Remove Student Or Company</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+<h2 class="section-title">Remove Student Or Company</h2>
+<button onclick="goToPage('admin-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner admin-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Removal Center</p>
+<h1>Handle account removals with clarity.</h1>
+<p class="page-subtitle">Separate student and company records into dedicated sections so destructive actions feel more deliberate and controlled.</p>
+</div>
+</section>
+
+<div class="stats-grid removal-stats-grid">
+<div class="stat-card warning-stat-card">
+<h3>Students Listed</h3>
+<p id="removeStudentCount">0</p>
+</div>
+<div class="stat-card warning-stat-card">
+<h3>Companies Listed</h3>
+<p id="removeCompanyCount">0</p>
+</div>
+</div>
+
+<div class="job-card empty-state-card removal-warning-card">
+<h3>Permanent action</h3>
+<p>Removing a student clears their applications and feedback. Removing a company also clears its jobs and related applications.</p>
+</div>
+
+<div class="dual-table-grid">
+<div class="table-card removal-panel">
+<div class="removal-panel-head">
+<h3 class="section-title">Students</h3>
+<p class="section-copy">Use this list only when a student account should be permanently removed from the portal.</p>
+</div>
+<table class="admin-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="removeStudentTable"></tbody>
+</table>
+</div>
+
+<div class="table-card removal-panel">
+<div class="removal-panel-head">
+<h3 class="section-title">Companies</h3>
+<p class="section-copy">Removing a company also removes all of its posted jobs and application records.</p>
+</div>
+<table class="admin-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="removeCompanyTable"></tbody>
+</table>
+</div>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

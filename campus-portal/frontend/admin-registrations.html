@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Check Registrations</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadRegistrationChecks()">
+<div class="navbar">
+<h2>Admin - Check Registrations</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+<h2 class="section-title">Check Registrations</h2>
+<button onclick="goToPage('admin-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner admin-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Student Intake</p>
+<h1>Track new student registrations at a glance.</h1>
+<p class="page-subtitle">A cleaner summary plus table view makes it easier to monitor signups and confirm portal activity.</p>
+</div>
+</section>
+
+<div class="stats-grid">
+<div class="stat-card">
+<h3>Total Student Registrations</h3>
+<p id="registrationCount">0</p>
+</div>
+</div>
+
+<div class="table-card">
+<p class="section-copy">All student registrations currently recorded in the system appear below.</p>
+<table class="admin-table">
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Status</th>
+</tr>
+</thead>
+<tbody id="registrationTable"></tbody>
+</table>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

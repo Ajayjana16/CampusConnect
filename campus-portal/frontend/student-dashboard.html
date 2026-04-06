@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Student Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="setStudentName()">
+<div class="navbar">
+  <h2>CampusConnect - Student</h2>
+
+  <div class="nav-right">
+    <div class="student-profile-chip">
+      <span id="studentWelcome">Welcome Student</span>
+      <button type="button" class="secondary-action-btn" onclick="editStudentName()">Edit</button>
+    </div>
+    <button onclick="logout()">Logout</button>
+  </div>
+</div>
+
+<div class="container dashboard-flow">
+<section class="page-hero-banner student-banner">
+  <div class="page-hero-copy">
+    <p class="page-kicker">Student Workspace</p>
+    <h1>Find promising roles without losing momentum.</h1>
+    <p class="page-subtitle">Everything you need lives in one calm, focused flow: discover openings, track what matters, and leave feedback after each experience.</p>
+  </div>
+  <div class="metric-ribbon">
+    <div class="metric-pill">
+      <span>Live Jobs</span>
+      <strong id="studentJobCountBanner">0</strong>
+    </div>
+    <div class="metric-pill">
+      <span>Next Step</span>
+      <strong>Apply Smart</strong>
+    </div>
+  </div>
+</section>
+
+<h2 class="section-title">Student Options</h2>
+<p class="section-copy">Choose a focused action below, then move into active opportunities once you are ready to apply.</p>
+
+<div class="management-grid">
+  <div class="management-card student-action-card">
+    <h3>Share Feedback</h3>
+    <p>Open the feedback page and rate your campus portal experience with a star-based review.</p>
+    <button onclick="goToPage('student-feedback.html')">Open Feedback</button>
+  </div>
+
+  <div class="management-card student-action-card">
+    <h3>Browse Opportunities</h3>
+    <p>Scroll through active jobs below and apply directly from the dashboard.</p>
+    <button onclick="scrollToJobs()">View Jobs</button>
+  </div>
+</div>
+
+<h2 class="section-title" id="jobsSection">Available Jobs</h2>
+<p class="section-copy">Fresh openings appear here in a clean card layout so you can compare faster and apply with confidence.</p>
+<div id="studentJobList" class="jobs-container"></div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

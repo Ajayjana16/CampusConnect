@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Update Company Details</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadCompaniesManagement()">
+<div class="navbar">
+<h2>Admin - Update Company Details</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<div class="page-actions">
+<h2 class="section-title">Update Company Details</h2>
+<button onclick="goToPage('admin-dashboard.html')">Back To Dashboard</button>
+</div>
+
+<section class="page-hero-banner compact-banner admin-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Company Records</p>
+<h1>Keep employer accounts consistent and up to date.</h1>
+<p class="page-subtitle">This page helps you maintain naming and email details for every registered company. Password resets now live in a separate admin recovery workflow.</p>
+</div>
+</section>
+
+<div class="table-card">
+<table class="admin-table">
+<thead>
+<tr>
+<th>Company Name</th>
+<th>Email</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody id="companyManagementTable"></tbody>
+</table>
+</div>
+</div>
+
+<script src="js/script.js"></script>
+</body>
+</html>

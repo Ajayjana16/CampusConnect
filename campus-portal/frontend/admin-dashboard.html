@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Admin Dashboard</title>
+<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body onload="loadAdminStats()">
+
+<!-- NAVBAR -->
+<div class="navbar">
+<h2>CampusConnect - Admin</h2>
+<button onclick="logout()" class="logout-btn">Logout</button>
+</div>
+
+<div class="container dashboard-flow">
+<section class="page-hero-banner admin-banner">
+<div class="page-hero-copy">
+<p class="page-kicker">Admin Control</p>
+<h1>Oversee the whole portal from a sharper command center.</h1>
+<p class="page-subtitle">Monitor registrations, tune company and student data, and keep jobs organized with a cleaner back-office experience.</p>
+</div>
+<div class="metric-ribbon">
+<div class="metric-pill">
+<span>Students</span>
+<strong id="totalStudentsBanner">0</strong>
+</div>
+<div class="metric-pill">
+<span>Companies</span>
+<strong id="totalCompaniesBanner">0</strong>
+</div>
+<div class="metric-pill">
+<span>Jobs</span>
+<strong id="activeJobsBanner">0</strong>
+</div>
+</div>
+</section>
+
+<div id="adminDashboardNotice"></div>
+
+<h2 class="section-title">Admin Workflows</h2>
+<p class="section-copy">Move directly into the core operational areas below. Update records first, review activity second, and handle removals deliberately.</p>
+
+<div class="management-grid admin-management-grid">
+<div class="management-card priority-card admin-card-wide">
+<h3>Update Student Details</h3>
+<p>Edit student names and emails from a dedicated management page.</p>
+<button onclick="goToPage('admin-student-management.html')">Open</button>
+</div>
+
+<div class="management-card priority-card admin-card-wide">
+<h3>Update Company Details</h3>
+<p>Edit registered company details and keep profile information up to date.</p>
+<button onclick="goToPage('admin-company-management.html')">Open</button>
+</div>
+
+<div class="management-card priority-card admin-card-wide">
+<h3>Reset User Passwords</h3>
+<p>Handle student and company password changes from one dedicated recovery workflow.</p>
+<button onclick="goToPage('admin-password-management.html')">Open</button>
+</div>
+
+<div class="management-card danger-card admin-card-wide">
+<h3>Remove Student Or Company</h3>
+<p>Delete student and company accounts from one place.</p>
+<button onclick="goToPage('admin-remove-management.html')">Open</button>
+</div>
+
+<div class="management-card secondary-card admin-card-compact">
+<h3>Check Registrations</h3>
+<p>View all student registrations that have signed up.</p>
+<button onclick="goToPage('admin-registrations.html')">Open</button>
+</div>
+
+<div class="management-card secondary-card admin-card-compact">
+<h3>Check Companies Registered</h3>
+<p>See companies that completed signup and review their details.</p>
+<button onclick="goToPage('admin-companies-registered.html')">Open</button>
+</div>
+
+<div class="management-card priority-card admin-card-wide">
+<h3>Update Posted Jobs</h3>
+<p>Review and update jobs posted on the portal from a dedicated page.</p>
+<button onclick="goToPage('admin-job-management.html')">Open</button>
+</div>
+</div>
+
+</div> <!-- container end -->
+
+<script src="js/script.js"></script>
+
+</body>
+</html>
